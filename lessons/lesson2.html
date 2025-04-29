@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lesson 2 Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../src/lessons.css" />
+  <script src="../src/navBar.js" defer></script>
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <section class="lesson-box">
+    <img src="../src/imgs/guitarpath-blue.png" class="logo" />
+    <h1 class="mb-3"><b>Introduction:</b></h1>
+    <p class="lead">This short lesson will act as an entry point on how to learn a song. We will start will melody, chords, then chord melody.</p>
+    <p>Additonally, we will explore transposing via capo, an intro to writing your own music and some good resources to learn more music!</p>
+
+    <h3>This Lesson Covers:</h3>
+    <ul>
+      <li><b>Learning a Song</b>: Melody, Chords, Chord-Melody</li>
+      <li><b>Capos:</b> Transposing Keys with the Same Shapes</li>
+      <li><b>Technique:</b> Hammer-ons, Pull-offs, Slides.</li>
+      <li><b>Approaching Songwriting:</b> Basic Intro to Songwriting</li>
+    </ul>
+  </section>
+
+  <!--Section 1 begins-->
+  <section class="lesson-box">
+    <h2>2.1 Learning Songs with Open Chords</h2>
+    <p>We’ll learn a complete song using open chords, melody, and rhythm. Our song is <em>“Twinkle Twinkle Little Star.”</em> Since most students know this tune, you’ll already have a clear idea of how it should sound—this mental reference is crucial for accurate practice.</p>
+
+    <p><strong>Step 1: Listen</strong><br>
+      Play the recording on loop, humming or singing along until you can confidently reproduce the melody.
+    </p>
+
+    <p><strong>Step 2: Chord Shapes & Rhythm</strong><br>
+      A <em>chord chart</em> shows chord changes above lyrics—just like on popular websites like Ultimate Guitar or Songsterr. Learn the open G major chord shapes below:
+    </p>
+
+    <ul>
+      <li><strong>G</strong> – 320033</li>
+      <li><strong>G</strong> - 320000</li>
+      <li><strong>C</strong> – x32010</li>
+      <li><strong>D</strong> – xx0232</li>
+    </ul>
+
+    <div class="text-center mb-3">
+      <img src="../src/songDemos/TwinkleChordSheet.png" alt="Twinkle Twinkle Chord Chart" class="img-fluid" />
+    </div>
+
+    <p>Start with one downstroke per beat (the basic pulse). As you get comfortable switching between shapes, add another downstroke (two strums per beat). Practice with a <em>metronome</em> or a backing track.</p>
+
+    <p><strong>Step 3: Melody Practice</strong><br>
+      Use the provided <em>tablature</em> or standard notation to practice the melody. Slow the playback speed to 0.75× and follow along until you can play each note cleanly; then build up to full speed.
+    </p>
+
+    <!-- Melody-->
+    <div id="melody-player" class="mb-5"></div>
+    <p><strong>Step 4: Combining Chords & Melody</strong><br>
+      Blend your chord strumming with the melody by focusing on strings that match each melody note and lifting fingers on others. Notice how removing some fingers from the open G chord we learned, can better match the melody.
+    </p>
+
+    <!-- Chord Melody -->
+    <div id="chord-melody-player" class="mb-4"></div>
+    <div class="alert alert-info">
+      <strong>Key Tip:</strong> Always listen for the melody note ringing clearly amid your chord strums. If it’s buried, lift or mute the extra strings.
+    </div>
+  </section>
+  <!-- Section 1 Ends-->
+
+  <!--Section 2 begins-->
+  <section class="lesson-box">
+    <h2>2.2 Using a Capo to Change Keys</h2>
+    <p>A <em>capo</em> clamps onto your guitar neck and raises all open strings by one fret per position. This lets you use the same chord shapes in a new key without learning new fingerings.</p>
+
+    <div class="text-center mb-2">
+      <iframe width="100%" height="600" src="https://www.youtube.com/embed/rTFS98ls8FQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <p>For example, placing the capo at fret 2 turns your G shape into an A chord:</p>
+    <ul>
+      <li><strong>G shape</strong> → A chord</li>
+      <li><strong>C shape</strong> → D chord</li>
+      <li><strong>D shape</strong> → E chord</li>
+    </ul>
+    <p>Notice how the chords go up one whole step per 2 frets, everything moves up a half step per fret.</p>
+    <p>Now play the same "Twinkle Twinkle" progression from 2.1 with the capo on fret 2 and instead of G, you’ll be in the key of A.</p>
+  </section>
+  <!-- Section 2 Ends-->
+
+  <!--Section 3 begins-->
+  <section class="lesson-box">
+    <h2>2.3 Essential Guitar Techniques</h2>
+    <p>Three simple techniques can add flair to your playing. Watch each embedded tutorial, then practice the tab examples shown.</p>
+    <div class="row justify-content-center">
+      <div class="col-md-4 text-center mb-3">
+        <h5>Hammer-ons and Pull-offs</h5>
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/zv0PTZVW4dI" frameborder="0" allowfullscreen></iframe>
+        <p class="mt-2"><code>0h2</code> = Play open string then hammer-on to fret 2</p>
+      </div>
+
+      <div class="col-md-4 text-center mb-3">
+        <h5>Slides</h5>
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/8zrfn-Qc3VQ" frameborder="0" allowfullscreen></iframe>
+        <p class="mt-2"><code>2p0</code> = Fret the 2nd fret then pull-off to open string</p>
+      </div>
+    </div>
+    <div class="text-center mb-4">
+      <p>Try hammer-on's pull offs and slides using the <strong>minor pentatonic scale</strong>:</p>
+      <img src="../src/imgs/AmPentatonic.svg" alt="Am Pentatonic" class="img-fluid">
+    </div>
+    <p>Here we have an example of the A minor pentatonic shape. Notice that it contains 5 notes (penta) that are in A minor
+      or C major (relative major). These notes will always work within the key and gives a blues-like feeling.
+    </p>
+    <p>Try to hammer on from any blue highlighted note to the following red note on the same string. Pull off from the red to blue, 
+      and try to slide in both directions.</p>
+
+  </section>
+  <!-- Section 3 Ends-->
+
+  <!--Section 4 begins-->
+  <section class="lesson-box">
+    <h2>2.4 Approaching Songwriting</h2>
+    <p>You can write simple songs using open chords in keys like G, C, A, and D. We’ll focus on G major since it uses mostly easy open shapes.</p>
+
+    <ul>
+      <li><strong>Pick a chord progression:</strong> Choose 2–4 chords from the key of G. Ex: G – C – D – Em <br>
+        <strong>All chords in G: I (G) – ii (Am) – iii (Bm) – IV (C) – V (D) – vi (Em) – vii° (F# dim)</strong></li>
+      <li><strong>Start or end on G:</strong> Beginning or resolving on G gives your progression a sense of completion.</li>
+      <li><strong>Play and document:</strong> Practice with a metronome and try recording it.</li>
+      <li><strong>Add a melody:</strong> Use notes from any of the three included scales in this lesson or try to combine them. 
+        Even 3–5 note melodies work!</li>
+      <li><strong>Experiment freely:</strong> If it sounds off, try the next note up or down. Keep it fun.</li>
+    </ul>
+    
+    <p><strong>G Major Pentatonic (Root Position):</strong></p>
+    <div class="text-center mb-3">
+      <img src="../src/imgs/GmajPentatonic.svg" alt="Gmaj Pentatonic" class="img-fluid">
+    </div>
+    <p><strong>G Major Scale (Root Position):</strong></p>
+    <div class="text-center mb-3">
+      <img src="../src/imgs/GmajorScale.svg" alt="G major Scale" class="img-fluid">
+    </div>
+    <p><strong>E Minor Pentatonic (Relative Minor):</strong></p>
+    <div class="text-center mb-3">
+      <img src="../src/imgs/EminPentatonic.svg" alt="Em Pentatonic" class="img-fluid">
+    </div>
+    <p>Notice how the G major pentatonic outlines the G major scale, the pentatonic scale just excludse the vii (F#) and 
+      the IV (C). These notes will all sound "right". Use E minor for a darker sound and G major for a lighter sound, combine the two and explore!
+    </p>
+  </section>
+  <!-- Section 4 Ends-->
+
+  <section class="lesson-box">
+    <h2>2.5 Best Resources for Learning Songs</h2>
+    <p>Combine high-quality tutorials and reliable tabs to expand your repertoire:</p>
+  
+    <h5>Video Lessons:</h5>
+    <ul class="resource-list">
+      <li><a href="https://www.youtube.com/@SignalsMusicStudio" target="_blank">Signals Music Studio - Theory Tutorials</a></li>
+      <li><a href="https://www.youtube.com/@martymusic" target="_blank">Marty Music - General and Song tutorials</a></li>
+      <li><a href="https://www.youtube.com/@marinmusic" target="_blank">Marin Music Center - Song tutorials</a></li>
+      <li><a href="https://www.youtube.com/@swiftlessons" target="_blank">Swiftlessons - General and Song tutorials</a></li>
+      <li><a href="https://www.youtube.com/@PaulDavidsMusic" target="_blank">Paul Davids - General music tutorials</a></li>
+      <li><a href="https://www.youtube.com/@JensLarsen" target="_blank">Jens Larsen - Great for Learning Jazz</a></li>
+    </ul>
+  
+    <h5>Tab/Chord Sites: (Warning: Not all tabs and chord sheets are accurate, trust your ears.)</h5>
+    <ul class="resource-list">
+      <li><a href="https://musescore.com/" target="_blank">MuseScore</a></li>
+      <li><a href="https://www.ultimate-guitar.com/" target="_blank">Ultimate Guitar</a> <span class="note">(sometimes inaccurate)</span></li>
+      <li><a href="https://www.songsterr.com/" target="_blank">Songsterr</a></li>
+    </ul>
+  
+    <p>Choose beginner-friendly arrangements—more songs, faster progress!</p>
+  </section>
+  <!-- Section 5 Ends-->
+  <!-- Inject notation player -->
+  <script type="module">
+    import { initLessonPlayer } from "../src/lessonPlayer.js";
+    import melodyData from "../src/songDemos/twinkleMelody.json" assert { type: "json" };
+    import chordMelodyData from "../src/songDemos/TwinkleChordMelody.json" assert { type: "json" };
+
+    initLessonPlayer("melody-player", melodyData);
+    initLessonPlayer("chord-melody-player", chordMelodyData);
+  </script>
+  <script src="../src/footer.js"></script>
+</body>
+</html>

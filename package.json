@@ -1,0 +1,21 @@
+{
+  "name": "tab-editor",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0"
+  },
+  "dependencies": {
+    "jspdf": "^3.0.1",
+    "smplr": "^0.16.1",
+    "svg2pdf.js": "^2.5.0",
+    "tone": "^15.0.4",
+    "vexflow": "^5.0.0"
+  }
+}

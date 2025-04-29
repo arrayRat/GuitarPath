@@ -1,0 +1,154 @@
+/* ----------------------------------
+   Global Layout & Theme
+---------------------------------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #003366;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+#editor-box {
+  width: 95%;
+  max-width: 1600px;
+  height: auto;
+  margin: 6rem auto 2rem auto; /* ⬅ top margin gives space under navbar */
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ----------------------------------
+   Layout: Flex Containers
+---------------------------------- */
+.editor-content {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.editor-layout {
+  display: flex;
+  min-height: 100vh;
+  gap: 1rem;
+}
+
+
+/* ----------------------------------
+   Sidebar & Notation Areas
+---------------------------------- */
+.editor-controls {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.editor-notation {
+  flex: 2 1 0;
+  overflow-x: auto;
+}
+
+.sidebar {
+  width: 280px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #ddd;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.notation-area {
+  background-color: white;
+  border-radius: 1rem;
+  overflow-x: auto;
+  min-width: 0;
+}
+
+/* ----------------------------------
+   Notation & Stave Rendering
+---------------------------------- */
+#notation {
+  min-width: 800px;
+  overflow-x: auto;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+#notation svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* ----------------------------------
+   Measure Click Areas
+---------------------------------- */
+.measure-click-area {
+  position: absolute;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  transition: box-shadow 0.15s ease-in-out;
+}
+
+.measure-click-area:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.measure-click-area.active-measure {
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4) inset;
+  border-radius: 4px;
+}
+
+
+/* ----------------------------------
+   Fretboard Layout
+---------------------------------- */
+#fretboard {
+  margin-top: 2rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 1rem;
+}
+
+table.fretboard {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+table.fretboard td {
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+table.fretboard td.selected {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.string-label {
+  font-weight: bold;
+  padding-right: 8px;
+  text-align: center;
+  background-color: #eee;
+  border: 1px solid #ccc;
+}
+
+
+/* ----------------------------------
+   UI Controls
+---------------------------------- */
+#rest-controls button,
+#technique-controls button {
+  font-size: 1.1rem;
+  padding: 0.4rem 0.8rem;
+  margin: 0.2rem;
+}
+
+#technique-controls button.active {
+  background-color: lightblue;
+}

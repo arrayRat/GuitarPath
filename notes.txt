@@ -1,0 +1,33 @@
+TO DO:
+
+Tab-editor:
+- Dotted notes CHECK
+- time sigs GOOD ENOUGH 
+- triplets HOLDING OFF
+- hammer ons/pull offs GOOD ENOUGH
+- slides/bends GOOD ENOUGH
+
+- import/export
+- export pdf???
+- playback smplr??? volume slider, tempo slider, play button, stop button
+- 
+
+Lesson Modules:
+0. Intro, warmup, technique, hand posture, fingers vs pick.
+1. Major scale, triads, open chords, simple melody. Connect things
+2. Chord Progressions, roman numeral analysis learning a simple song.
+4. Pentatonics and the major scale, new voicings and options.
+5. 
+
+Practice Planner with metronome:
+-TBD
+
+Metronome/Tuner:
+-TBD
+
+
+
+npm installls:
+npm install jspdf svg2pdf.js
+npm install vexflow
+npm install for vite

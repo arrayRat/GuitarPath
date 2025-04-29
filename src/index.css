@@ -1,0 +1,28 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  height: 100%;
+}
+
+body.index-body {
+  background-color: #003366;
+  color: #111;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-y: auto; /* Make sure only one vertical scrollbar is used */
+}
+
+/* Your original styles below */
+.index-box {
+  background: white;
+  border-radius: 16px;
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.responsive-logo {
+  width: clamp(150px, 25vw, 220px);
+  height: auto;
+}

@@ -1,0 +1,37 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #003366;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Avoids horizontal scroll */
+  min-height: 100vh;  /* Let body grow with content */
+}
+  /* For all lesson sections. */
+  .lesson-box {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    max-width: 900px;
+    margin: 2rem auto;
+  }
+  /*For logo */
+  .lesson-box img.logo {
+    display: block;
+    max-width: 35%;
+    height: auto;
+    margin: 0 auto 1rem auto; /* centers it & adds spacing below */
+  }
+    /* Layout for open chord diagrams lesson 1*/
+    .chord-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+    .chord-grid img {
+      /* force exactly 40px wide, wrapping into two rows */
+      width: 200px;
+      height: auto;
+      flex: 0 0 auto;
+    }
