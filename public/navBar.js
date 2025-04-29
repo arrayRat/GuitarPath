@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <header class="bg-custom text-white shadow-sm fixed-top">
       <div class="container-fluid d-flex justify-content-between align-items-center px-4 py-2">
         <a href="/index.html" class="d-flex align-items-center text-white text-decoration-none">
-            <img src="/src/imgs/guitarpath-white.png" alt="GuitarPath Logo" class="logo-img" />
+            <img src="/imgs/guitarpath-white.png"     alt="GuitarPath Logo" class="logo-img" />
         </a>
         <nav>
           <ul class="nav">
